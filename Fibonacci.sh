@@ -1,19 +1,23 @@
 #!/bin/bash -x
 
 echo "Enter the value of N: "
+
 read N
 
+sum=0
 a=0
 b=1
 
 echo "The Fibonacci series is : "
+echo "$a"
 
-for (( i=0; i<N; i++ ))
+while [ sum -le N ]
 do
 
-   echo -n "$a "
-   fb=$((a + b))
+   echo -n "$b"
    a=$b
-   b=$fb
+   b=$sum
+   sum=$((a + b))
 
 done
+
