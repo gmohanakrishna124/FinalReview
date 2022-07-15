@@ -9,7 +9,7 @@ a=0
 b=1
 
 echo "The Fibonacci series is : "
-echo "$a"
+
 
 while [ $sum -le $N ]
 do
